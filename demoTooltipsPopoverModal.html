@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Tooltip Example-->
+    <a href="#" data-toggle="tooltip" title="This is a tooltip" data-placement="bottom">
+        Hover over the link
+    </a>
+    <script>
+        $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+
+    <!--Popover Example-->
+    <div class="container">
+        <a href="#" data-toggle="popover" title="Popover Header" data-content="Content of Popover">
+            Toggle Popover
+        </a>
+    </div>
+    <script>
+        $(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+    <!--Modal Example-->
+    <div class="container">
+        <!--Triggering the modal with button-->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="
+        #myModal">Open Modal</button>
+
+        <!--The Modal-->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!--Modal Content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Model Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>The content of the Modal</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>

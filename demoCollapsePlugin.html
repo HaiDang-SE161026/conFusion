@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <p>
+        <!--Collapse with <a> tag-->
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button">
+            Link with Href
+        </a>
+        <!--Collapse with <button> tag, uses data-target instead of href-->
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" role="button">Button with data-target</button>
+
+        <button class="btn btn-primary" data-toggle="collapse" data-target=".multiCollapse" role="button">Multi Collapse</button>
+    </p>
+
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            This is a paragraph
+        </div>
+    </div>
+    <div class="collapse multiCollapse" id="collapseExample1">
+        <div class="card card-body">
+            This is a example 1
+        </div>
+    </div>
+    <div class="collapse multiCollapse" id="collapseExample2">
+        <div class="card card-body">
+            This is a example 2
+        </div>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
