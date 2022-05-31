@@ -64,6 +64,10 @@ body {
   z-index: 1;
 }
 
+#myModal {
+  color: black;
+}
+
 .modal-header {
   color: floralWhite;
   background: #512DA8;
